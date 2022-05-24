@@ -24,30 +24,32 @@ function Classes() {
         setSelectedClass(event.target.value);
     };
 
-    return (
-        <>
-            {classList.length
-            ? 
-            <>
-                <Title>Selecione uma classe</Title>
-                <FormControl sx={{minWidth: 120}}>
-                    <InputLabel>Classe</InputLabel>
-                    <Select
-                        value={selectedClass}
-                        label="Classe"
-                        onChange={handleChange}
-                    >
-                        {classList.map(item => (
-                            <MenuItem key={item.index} value={item.name}>{item.name}</MenuItem>
-                        ))}
-                    </Select>
-                </FormControl>
-            </>
-            :
-                <CircularProgress sx={{color: 'black'}} />
-            }
-        </>
-    )
+    const classListOptions = classList.map(item => (
+        <MenuItem key={item.index} value={item.name}>{item.name}</MenuItem>
+    ))
+
+    const classComponent = () => {
+        if(classList.length > 0) {
+            return (
+                <>
+                    <Title>Selecione uma classe</Title>
+                    <FormControl sx={{minWidth: 120}}>
+                        <InputLabel>Classe</InputLabel>
+                        <Select
+                            value={selectedClass}
+                            label="Classe"
+                            onChange={handleChange}>
+                            {classListOptions}
+                        </Select>
+                    </FormControl>
+                </>
+            )
+        } else {
+            return (<CircularProgress sx={{color: 'black'}} />)
+        }
+    }
+
+    return classComponent();
 }
 
 export default Classes;
