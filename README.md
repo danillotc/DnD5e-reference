@@ -2,6 +2,8 @@
 
 An interative reference guide for the D&D 5th edition.
 
+Published with [github-pages](https://danillotc.github.io/DnD5e-reference/)
+
 ## Using
 
 - [Create React App](https://github.com/facebook/create-react-app)
