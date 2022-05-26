@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import GlobalFonts from './Assets/Fonts/fonts'
 import './App.css';
 import Header from './Components/Header';
-import Classes from './Pages/Classes';
+import Races from './Pages/Races';
 
 const PaddedBody = styled.div`
   padding: 30px;  
@@ -10,9 +11,10 @@ const PaddedBody = styled.div`
 function App() {
   return (
     <>
+      <GlobalFonts />
       <Header title='DnD 5e Reference'/>
       <PaddedBody>
-        <Classes/>
+        <Races/>
       </PaddedBody>
     </>
   );
