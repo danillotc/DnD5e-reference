@@ -41,7 +41,7 @@ function Races() {
             return (
                 <>
                     <Title>Select a character race</Title>
-                    <FormControl sx={{minWidth: 120}}>
+                    <FormControl sx={{minWidth: 120, marginBottom: 5}}>
                         <InputLabel>Races</InputLabel>
                         <Select
                             value={selectedRace}

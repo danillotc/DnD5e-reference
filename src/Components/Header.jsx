@@ -12,7 +12,7 @@ const HeaderBox = styled.div`
 
 const Title = styled.h1`
     color: whitesmoke;
-    font-size: 3em;
+    font-size: 2rem;
     font-family: 'DeRoos';
 `
 

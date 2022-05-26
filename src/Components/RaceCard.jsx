@@ -27,13 +27,18 @@ function RaceCard(props) {
     }, [props.raceName]);
 
     return <>
-            <Card variant="outlined" sx={{width: '50%' }}>
+            <Card variant="outlined" sx={{
+                width: '80%',
+                boxShadow: '3px 3px 5px gray',
+            }}>
                 <CardContent sx={{
                     display: 'flex', 
                     flexDirection: 'column',
                     justifyContent: 'center', 
                     alignItems: 'center', 
-                    minHeight: 200
+                    minHeight: 200,
+                    backgroundColor: 'palegoldenrod',
+                    boxShadow: '5px 5px solid blue'
                 }}>
                     {
                         loading ? <CircularProgress sx={{color: 'black'}} />
