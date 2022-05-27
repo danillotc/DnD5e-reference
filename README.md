@@ -1,6 +1,6 @@
 # Dungeons and Dragon's 5th edition reference app
 
-An interative reference guide for the D&D 5th edition.
+An interactive reference guide for the D&D 5th edition.
 
 Published with [github-pages](https://danillotc.github.io/DnD5e-reference/)
 
