@@ -38,6 +38,9 @@ function Header(props) {
                 <Title>{props.title}</Title>
             </Link>
             <MenuBox>
+                <Link to='/classes' style={{textDecoration: 'none'}}>
+                    <MenuItem>Classes</MenuItem>
+                </Link>
                 <Link to='/races' style={{textDecoration: 'none'}}>
                     <MenuItem>Races</MenuItem>
                 </Link>

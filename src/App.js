@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import GlobalFonts from './Assets/Fonts/fonts';
 import Header from './Components/Header';
 import Races from './Pages/Races';
+import DndClasses from './Pages/DndClasses.jsx';
 import './App.css';
 
 const Container = styled.div`
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path='/' />
           <Route path='/races' element={<Races />} />
+          <Route path='/classes' element={<DndClasses />} />
         </Routes>
       </Container>      
     </Router>

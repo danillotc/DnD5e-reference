@@ -24,7 +24,7 @@ function Races() {
             .then((result => {
                 setRacesList(result.results);
                 }),
-                (error) => console.log('Error: ', error)
+                (error) => console.warn('Error: ', error)
             )
     }, []);
 
