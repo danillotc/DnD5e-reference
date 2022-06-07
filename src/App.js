@@ -9,6 +9,7 @@ import GlobalFonts from './Assets/Fonts/fonts';
 import Header from './Components/Header';
 import Races from './Pages/Races';
 import DndClasses from './Pages/DndClasses.jsx';
+import MyChar from './Pages/MyChar';
 import './App.css';
 
 const Container = styled.div`
@@ -25,6 +26,7 @@ function App() {
           <Route path='/' />
           <Route path='/races' element={<Races />} />
           <Route path='/classes' element={<DndClasses />} />
+          <Route path='/mychar' element={<MyChar />} />
         </Routes>
       </Container>      
     </Router>

@@ -30,6 +30,12 @@ const MenuItem = styled.div`
     padding-right: 2rem;
     text-decoration: none;
     color: white;
+    transition: 0.5s;
+
+    &:hover {
+        color: lightyellow;
+        text-shadow: 0 0 5px yellow;
+    }
 `
 
 function Header(props) {
@@ -43,6 +49,9 @@ function Header(props) {
                 </Link>
                 <Link to='/races' style={{textDecoration: 'none'}}>
                     <MenuItem>Races</MenuItem>
+                </Link>
+                <Link to='/mychar' style={{textDecoration: 'none'}}>
+                    <MenuItem>MyChar</MenuItem>
                 </Link>
             </MenuBox>
         </HeaderBox>

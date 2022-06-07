@@ -23,7 +23,7 @@ function ClassCard(props) {
     }, [props.selectedClass]);
 
     return <>
-        {loading ? <CircularProgress sx={{color: 'black'}} />
+        {loading ? <CircularProgress sx={{color: 'black', marginTop: 2}} />
             : <Text>Hit die: {classesProps.hit_die}</Text>
         }
     </>
