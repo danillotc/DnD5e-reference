@@ -10,12 +10,16 @@ const HeaderBox = styled.div`
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    `
+`
 
 const Title = styled.h1`
     color: whitesmoke;
     font-size: 2rem;
     font-family: 'DeRoos';
+
+    @media screen and (max-width: 600px) {
+        font-size: 1rem;
+    }
 `
 const MenuBox = styled.div`
     display: flex;
@@ -35,6 +39,11 @@ const MenuItem = styled.div`
     &:hover {
         color: lightyellow;
         text-shadow: 0 0 5px yellow;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 1rem;
+        padding-right: 1rem;
     }
 `
 
